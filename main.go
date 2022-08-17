@@ -28,7 +28,7 @@ var termName = map[string]string{
 
 func main() {
 	yaccFile := flag.String("in", "parser.y", "yacc file")
-	recursive := flag.Bool("recursive", true, "automatically add sub items")
+	recursive := flag.Bool("recursive", false, "automatically add sub items")
 	_include := flag.String("include", "", "list of symbols needs to be output, separated by comma")
 	_exclude := flag.String("exclude", "Identifier,Expression,BitExpr", "list of symbols that should not be output, separated by comma")
 	flag.Parse()
